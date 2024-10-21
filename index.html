@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>3D Software Survey</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <h1>3D Animation Software Comparison</h1>
+    <p>This survey seeks to find the most popular 3D animation software and what it’s primarily used for.</p>
+      
+      <fieldset>
+        <label for="first-name">Name: <input id="first-name" name="first-name" type="text" required /></label>
+        <label for="email">Email: <input id="email" name="email" type="email" required /></label>
+        <label for="referrer">Pick which best describes you:
+          <select id="role" name="role">
+            <option value="">(select one)</option>
+            <option value="1">Student</option>
+            <option value="2">Animator</option>
+            <option value="3">Game Developer</option>
+            <option value="4">Hobbyist</option>
+            <option value="5">Other</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Which one of these softwares are you most likely to use? (Please pick one):</legend>
+        <label for="blender"><input id="blender" type="radio" name="software" class="inline"/> Blender</label>
+        <label for="c4d"><input id="c4d" type="radio" name="software" class="inline" /> Cinema 4D</label>
+        <label for="maya"><input id="maya" type="radio" name="software" class="inline" /> Maya</label>
+        <label for="houdini"><input id="houdini" type="radio" name="software" class="inline" /> Houdini</label>
+        <label for="max"><input id="max" type="radio" name="software" class="inline" /> 3ds Max</label>
+        <label for="other"><input id="other" type="radio" name="software" class="inline" /> Other</label>
+      </fieldset>
+
+      <fieldset>
+        <label for="years">Years of Experience with this software: <input id="years" type="number" name="years" min="0" max="50" /></label>
+      </fieldset>
+      
+      <fieldset>
+            <legend>What do you use this software for? (Select all that apply):</legend>
+            <input id="modeling" type="checkbox" name="use" value="modeling" class="inline"> <label for="modeling">Modeling</label>
+            <input id="texturing" type="checkbox" name="use" value="texturing" class="inline"> <label for="texturing">Texturing</label>
+            <input id="character" type="checkbox" name="use" value="character" class="inline"> <label for="character">Character Animation</label>
+            <input id="motion" type="checkbox" name="use" value="motion" class="inline"> <label for="motion">Motion Graphics</label>
+            <input id="rendering" type="checkbox" name="use" value="rendering" class="inline"> <label for="rendering">Rendering/Shading</label>
+            <input id="other" type="checkbox" name="use" value="other" class="inline"> <label for="other">Other</label>
+      </fieldset>
+      
+      <fieldset>
+        <label for="comment">Comments:
+          <textarea id="comment" name="comment" rows="7" cols="30" placeholder="Please enter additional comments here..."></textarea>
+        </label>
+      </fieldset>
+
+      <input type="submit" value="Submit" />
+      
+    </form>
+  </body>
+</html>
