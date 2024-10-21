@@ -1,6 +1,5 @@
 body {
     width: 100%;
-    margin: 0;
     background: linear-gradient(180deg, #0A1128 0%, #DE4343 100%);
     color: #FEFCFB;
     font-family: Kanit;
@@ -44,15 +43,17 @@ body {
   fieldset {
     border: none;
     padding: 2rem 0;
+    margin: 0 25%;
   }
   
   fieldset:last-of-type {
     border-bottom: none;
+    margin: 0 25%;
   }
   
   label {
     display: block;
-    margin: 0.5rem 0;
+    margin: 0.5rem;
   }
   
   input,
